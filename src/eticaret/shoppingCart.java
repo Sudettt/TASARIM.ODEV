@@ -8,10 +8,11 @@ import java.util.Scanner;
 public class shoppingCart {
 
     static class Product {
+        Product(String isim, double fiyat){
         String isim;
         double fiyat;
-            this.isim=isim;
-            this.fiyat=fiyat;
+        this.isim=isim;
+        this.fiyat=fiyat;
         }
     }
 
