@@ -1,7 +1,6 @@
 package eticaret;
 
 public class Product {
-	
        public String isim;
        public double fiyat;
        public Product(String isim, double fiyat){
