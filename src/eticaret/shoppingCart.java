@@ -7,13 +7,7 @@ import java.util.Scanner;
 
 public class shoppingCart {
 
-    static class Product {
-        String isim;
-        double fiyat;
-            this.isim=isim;
-            this.fiyat=fiyat;
-        }
-    }
+    
 
     private List<Product> urunler=new ArrayList<>();
 
