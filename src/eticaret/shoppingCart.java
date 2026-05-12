@@ -10,7 +10,6 @@ public class shoppingCart {
     static class Product {
         String isim;
         double fiyat;
-        Product(String isim, double fiyat) 
             this.isim=isim;
             this.fiyat=fiyat;
         }
