@@ -7,5 +7,7 @@ public class Product {
             this.isim=isim;
             this.fiyat=fiyat;
         }
+       public double getPrice() { return fiyat; }
+       public String getName() { return isim; }
     }
 
