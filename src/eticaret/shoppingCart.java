@@ -7,14 +7,6 @@ import java.util.Scanner;
 
 public class shoppingCart {
 
-    static class Product {
-        Product(String isim, double fiyat){
-        String isim;
-        double fiyat;
-        this.isim=isim;
-        this.fiyat=fiyat;
-        }
-    }
 
     private List<Product> urunler=new ArrayList<>();
 
@@ -39,16 +31,10 @@ public class shoppingCart {
             toplam+=p.fiyat;
         }
 
-        if (indirimTipi.equalsIgnoreCase("YENI_UYE")) {
-            return toplam * 0.90; // %10 indirim
-        } else if (indirimTipi.equalsIgnoreCase("KUPON")) {
-            return toplam - 50;   // Sabit indirim
-        } else if (indirimTipi.equalsIgnoreCase("TOPLU_ALIM")) {
-            if (toplam > 1000) {
-                return toplam * 0.80; // %20 indirim
-            }
-        } else if (indirimTipi.equalsIgnoreCase("OGRENCI")) {
-            return toplam * 0.85; // %15 indirim
+        Discount indirim=IndirimFabrika.indirimGetir(indirimTipi);
+        
+        if (indirim!=null) {
+            return indirim.IndirimUygula(toplam);
         }
         
         return toplam;
