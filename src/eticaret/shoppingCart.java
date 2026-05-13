@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class shoppingCart {
 
-    
 
     private List<Product> urunler=new ArrayList<>();
 
