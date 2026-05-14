@@ -55,13 +55,25 @@ public class shoppingCart {
             
             int secim=scanner.nextInt();
             
-            if (secim==1) {
+         
+            if (secim == 1) {
                 System.out.print("Ürün Adı: ");
                 String ad = scanner.next();
                 System.out.print("Fiyat: ");
                 double fiyat = scanner.nextDouble();
-                sepet.urunEkle(ad, fiyat);
-            } else if (secim==2) {
+                
+                Product p = new Product(ad, fiyat);
+                
+                System.out.print("Hediye paketi (20 TL) ister misiniz? (E/H): ");
+                String cevap = scanner.next();
+                if(cevap.equalsIgnoreCase("E")) {
+                    p = new HediyePaketi(p);
+                }
+                
+                sepet.urunEkle(p.getName(), p.getPrice()); 
+                System.out.println(p.getName() + " sepete eklendi.");
+            }
+            else if (secim==2) {
                 sepet.sepetiGoster();
             } else if (secim==3) {
                 System.out.print("İndirim Tipi (YENI_UYE, KUPON_50, TOPLU_ALIM, OGRENCI): ");
