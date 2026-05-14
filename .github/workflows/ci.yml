@@ -1,0 +1,17 @@
+name: Java Derleme Kontrolu
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Java 17 Kur
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Derleme Testi
+        run: |
+          mkdir -p bin
+          javac -d bin src/eticaret/*.java
