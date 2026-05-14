@@ -1,17 +1,17 @@
 package eticaret;
 
- class HediyePaketi extends UrunDekorator {
+public class HediyePaketi extends UrunDekorator {
     public HediyePaketi(Product urun) {
         super(urun);
     }
 
     @Override
-    public double fiyatHesapla() {
-        return dekoreEdilenUrun.fiyat+20.0;//20 tl paket ücreti
+    public double getPrice() {
+        return dekoreEdilenUrun.getPrice()+20.0;
     }
 
     @Override
-    public String adGetir() {
-        return dekoreEdilenUrun.isim + " (Hediye Paketli)";
+    public String getName() {
+        return dekoreEdilenUrun.getName() + " (Hediye Paketli)";
     }
 }
