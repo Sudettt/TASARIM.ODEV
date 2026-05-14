@@ -1,4 +1,4 @@
-  KODDAKİ HATA VE SORUNLAR :
+ # KODDAKİ HATA VE SORUNLAR :
   Kod içerisinde syntax (sözdizimi) hataları bulunmaktadır. 
   Tüm işlemlerin tek bir class altında yazılması kod okunabilirliğini zorlaştırmaktadır. 
   Kod yapısı karmaşık olduğu için anlaşılabilirlik azalmaktadır. 
@@ -9,7 +9,7 @@
   Çok fazla işlemin aynı yerde yapılması kod düzenini olumsuz etkilemektedir.
 
   
-  YAPAY ZEKA CEVABI : 
+ # YAPAY ZEKA CEVABI : 
  
 
 1. Single Responsibility Principle (SRP) İhlali
@@ -26,3 +26,6 @@ Yeni bir indirim türü (örneğin: Mevsimlik İndirim) eklenmek istendiğinde, 
 
  5. Esneklik Eksikliği
 Sepetteki ürünleri listeleme veya farklı formatlarda faturalandırma gibi özellikler eklendiğinde, sınıfa sürekli yeni metodlar eklenerek "God Object" (Tanrı Nesne) oluşmasına neden olunmaktadır.
+
+# AI VE KENDİ BAKIŞ AÇIM ARASINDAKİ FARKLAR :
+Ben daha çok kodun kolay anlaşılırlığı ve tasarımı açısından bakarken yapay zekanın daha çok teknik hatalara odaklanması, benim de koda daha profesyonel olarak bakmam gerektiğini hatırlattı.Genel olarak ilkeleri açıklayarak bunların ihlalini anlatması da bu konuyu daha iyi anlamam için güzel bir örnek oluşturdu.
