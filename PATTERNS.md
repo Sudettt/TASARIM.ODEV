@@ -1,5 +1,5 @@
 # FAZ1
-#1. Uygulanan Yer ve Problem
+# 1. Uygulanan Yer ve Problem
 shoppingCart sınıfı içerisinde, farklı indirim stratejilerine göre nesne oluşturma işlemi if-else blokları ile manuel olarak yapılıyordu. Bu durum, sisteme yeni bir indirim türü eklendiğinde ana sınıfın değiştirilmesini zorunlu kılıyor ve kodun esnekliğini azaltıyordu.
 
 # 2. Nereden, Neden ve Ne Kazandırdı?
