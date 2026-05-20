@@ -1,3 +1,4 @@
+(Faz 2'de Structural örüntüler olan Adapter ve Decorator uygulandı)
 # Faz 2: Mimari Karar ve AI Etkileşim Raporu
  
  AI ‘a Sorulan Soru : Neden Adapter , Facade kullanmaktan daha uygun?
