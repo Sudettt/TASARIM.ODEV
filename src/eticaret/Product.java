@@ -9,5 +9,5 @@ public class Product {
         }
        public double getPrice() { return fiyat; }
        public String getName() { return isim; }
+       public void setPrice(double fiyat) { this.fiyat=fiyat; }
     }
-
